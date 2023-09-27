@@ -6,9 +6,7 @@ Aqui se sube la actualizacion del codigo para test
 1. [Métodos de Acción](#métodos-de-acción)
 2. [POM](#POM)
 3. [Test](#TEST)
-4. [Sección 4](#sección-4)
-
-
+4. [Como Ejecutar los Test](#Como-Ejecutar-los-Test)
 
 Esctructura de la automatizacion.
 
@@ -51,6 +49,17 @@ Una vez que ya tengamos nuestros POM creados y configurados. creamos un package 
 en el cual colocaremos las variables que vamos a solicitar y enviar a los test para que estas se ejecuten. 
 
 ![image](https://github.com/ZeravatLegna/PruebaAPAP/assets/146205659/96de36b8-98ff-45e3-b704-ef6b9a0bdd5b)
+
+
+## Como Ejecutar los Test
+
+Para ejecutar los test, nos vamos al package de test como se ve en la seccion de test, ahi los test estan tageados y convocados. 
+
+si tenemos la libreria de testng instalada podemos dar click derecho y correr los test. 
+
+![image](https://github.com/ZeravatLegna/PruebaAPAP/assets/146205659/d20d0af8-a03d-4923-9f2b-5ffe78f47adc)
+
+esto ejecutara todos los test que esten tageados.
 
 
 
