@@ -1,12 +1,20 @@
 # PruebaAPAP
 Aqui se sube la actualizacion del codigo para test
 
+# Tabla de Índices
+
+1. [Métodos de Acción](#métodos-de-acción)
+2. [POM](#POM)
+3. [Test](#TEST)
+4. [Sección 4](#sección-4)
+
+
 
 Esctructura de la automatizacion.
 
 
 
-Metodos De Accion.
+## Metodos De Accion.
 
 Las acciones que se pueden realizar dentro de las pruebas automatizadas estan creadas en un Package llamado helpers
 
@@ -21,7 +29,7 @@ las variables son
 Objeto y Elemento
 
 
-POM 
+## POM 
 
 Los elementos de las paginas estan esquematizado en el package de pages. 
 
@@ -36,7 +44,7 @@ se procede a crear el paso a paso dentro de la pagina utilizando los metodos cre
 ![image](https://github.com/ZeravatLegna/PruebaAPAP/assets/146205659/d026ae38-460b-4407-be06-71d248b0faf2)
 
 
-Test 
+## Test 
 
 Una vez que ya tengamos nuestros POM creados y configurados. creamos un package para test, en el cual tendremos el test suit.
 
