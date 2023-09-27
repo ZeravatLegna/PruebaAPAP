@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-27T11:48:30 BOT" name="Surefire suite" finished-at="2023-09-27T11:50:02 BOT" duration-ms="92295">
+    <groups>
+    </groups>
+    <test started-at="2023-09-27T11:48:30 BOT" name="Surefire test" finished-at="2023-09-27T11:50:02 BOT" duration-ms="92295">
+      <class name="test.Tests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.Tests@5ccddd20]" started-at="2023-09-27T11:48:30 BOT" name="setUp" finished-at="2023-09-27T11:48:38 BOT" duration-ms="8753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="test1()[pri:0, instance:test.Tests@5ccddd20]" started-at="2023-09-27T11:48:38 BOT" name="test1" finished-at="2023-09-27T11:49:02 BOT" duration-ms="23808" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.Tests@5ccddd20]" started-at="2023-09-27T11:49:02 BOT" name="tearDown" finished-at="2023-09-27T11:49:03 BOT" duration-ms="1062" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.Tests@5ccddd20]" started-at="2023-09-27T11:49:03 BOT" name="setUp" finished-at="2023-09-27T11:49:11 BOT" duration-ms="7791" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="test2()[pri:0, instance:test.Tests@5ccddd20]" started-at="2023-09-27T11:49:11 BOT" name="test2" finished-at="2023-09-27T11:49:36 BOT" duration-ms="24909" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.Tests@5ccddd20]" started-at="2023-09-27T11:49:36 BOT" name="tearDown" finished-at="2023-09-27T11:49:37 BOT" duration-ms="846" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.Tests@5ccddd20]" started-at="2023-09-27T11:49:37 BOT" name="setUp" finished-at="2023-09-27T11:49:45 BOT" duration-ms="7740" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="test3()[pri:0, instance:test.Tests@5ccddd20]" started-at="2023-09-27T11:49:45 BOT" name="test3" finished-at="2023-09-27T11:50:01 BOT" duration-ms="16642" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.Tests@5ccddd20]" started-at="2023-09-27T11:50:01 BOT" name="tearDown" finished-at="2023-09-27T11:50:02 BOT" duration-ms="708" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.Tests -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
