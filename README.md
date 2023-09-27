@@ -48,6 +48,8 @@ Una vez que ya tengamos nuestros POM creados y configurados. creamos un package 
 
 en el cual colocaremos las variables que vamos a solicitar y enviar a los test para que estas se ejecuten. 
 
+![image](https://github.com/ZeravatLegna/PruebaAPAP/assets/146205659/8747edef-1467-46e8-97f7-756b3ad9434f)
+
 ![image](https://github.com/ZeravatLegna/PruebaAPAP/assets/146205659/96de36b8-98ff-45e3-b704-ef6b9a0bdd5b)
 
 
