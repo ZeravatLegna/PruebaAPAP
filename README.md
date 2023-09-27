@@ -63,6 +63,34 @@ si tenemos la libreria de testng instalada podemos dar click derecho y correr lo
 
 esto ejecutara todos los test que esten tageados.
 
+Tambien podemos ejecutar los Test A traves de CMD.
+
+Nos ubicamos en la carpeta del proyecto 
+
+![image](https://github.com/ZeravatLegna/PruebaAPAP/assets/146205659/909cea14-c6a0-4436-a0e5-fe1cb233fd93)
+
+Pulsamos clic derecho y selecionamos la opcion, abrir terminal.
+
+
+![image](https://github.com/ZeravatLegna/PruebaAPAP/assets/146205659/f8ab95a1-2794-49f0-985c-95e63cd430fb)
+
+una vez con la terminal abierta.
+
+![image](https://github.com/ZeravatLegna/PruebaAPAP/assets/146205659/85d31403-2c74-423a-be7d-d75536a92685)
+
+Escribimos el siguiente comando MVN test
+
+![image](https://github.com/ZeravatLegna/PruebaAPAP/assets/146205659/cf9bb864-36f8-4b7d-910d-079a64fa2094)
+
+
+y se ejecutara nuestra pruebas. 
+
+![image](https://github.com/ZeravatLegna/PruebaAPAP/assets/146205659/69869ab7-0a36-4303-87f2-5cbe40e62eec)
+
+
+
+
+
 
 
 
