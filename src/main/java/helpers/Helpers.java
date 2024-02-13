@@ -30,8 +30,8 @@ public class Helpers {
 	}
 	
 	public void dobleClic(WebDriver driver, WebElement objeto) {
-	        Actions actions = new Actions(driver);
-	        actions.doubleClick(objeto).perform();
+	    Actions actions = new Actions(driver);
+	    actions.doubleClick(objeto).perform();
 	}
 	
 	public void CambiarFrame (WebDriver driver, String objeto) {
