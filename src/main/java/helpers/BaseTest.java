@@ -1,10 +1,6 @@
 package helpers;
 
-import helpers.BrowserType;
 import io.github.bonigarcia.wdm.WebDriverManager;
-
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -37,13 +33,11 @@ public class BaseTest {
                 case CHROME:
                     WebDriverManager.chromedriver().setup();
                     ChromeOptions chromeOptions = new ChromeOptions();
-                    chromeOptions.setHeadless(true);
                     chromeOptions.merge(desCapabilities);
                     return new ChromeDriver(chromeOptions);
                 case FIREFOX:
                     WebDriverManager.firefoxdriver().setup();
                     FirefoxOptions firefoxOptions = new FirefoxOptions();
-                    firefoxOptions.setHeadless(true);
                     firefoxOptions.merge(desCapabilities);
                     return new FirefoxDriver(firefoxOptions);
                 case EDGE:
@@ -54,7 +48,6 @@ public class BaseTest {
                 default:
                     WebDriverManager.chromedriver().setup();
                     ChromeOptions options = new ChromeOptions();
-                    options.setHeadless(true);
                     options.addArguments(sslIgnore, allowRunningInsecure, defaultMaximize);
                     options.merge(desCapabilities);
                     return new ChromeDriver(options);
