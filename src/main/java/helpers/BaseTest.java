@@ -16,8 +16,11 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 public class BaseTest {
 
     private static WebDriver driver;
+    private static BrowserType browserType;
 
-    public void openBrowser(String url) {
+    public void openBrowser(String url, BrowserType type) {
+        browserType = type;
+        driver = getBrowser(browserType);
         driver.navigate().to(url);
     }
 
@@ -33,34 +36,28 @@ public class BaseTest {
                 case CHROME:
                     WebDriverManager.chromedriver().setup();
                     ChromeOptions chromeOptions = new ChromeOptions();
-                    chromeOptions.setHeadless(true); 
+                    chromeOptions.setHeadless(true);
                     chromeOptions.merge(desCapabilities);
-                    driver = new ChromeDriver(chromeOptions);
-                    break;
+                    return new ChromeDriver(chromeOptions);
                 case FIREFOX:
                     WebDriverManager.firefoxdriver().setup();
                     FirefoxOptions firefoxOptions = new FirefoxOptions();
-                    firefoxOptions.setHeadless(true); 
+                    firefoxOptions.setHeadless(true);
                     firefoxOptions.merge(desCapabilities);
-                    driver = new FirefoxDriver(firefoxOptions);
-                    break;
+                    return new FirefoxDriver(firefoxOptions);
                 case EDGE:
                     WebDriverManager.edgedriver().setup();
                     EdgeOptions edgeOptions = new EdgeOptions();
                     edgeOptions.merge(desCapabilities);
-                    driver = new EdgeDriver(edgeOptions);
-                    break;
+                    return new EdgeDriver(edgeOptions);
                 default:
                     WebDriverManager.chromedriver().setup();
                     ChromeOptions options = new ChromeOptions();
-                    options.setHeadless(true); 
+                    options.setHeadless(true);
                     options.addArguments(sslIgnore, allowRunningInsecure, defaultMaximize);
                     options.merge(desCapabilities);
-                    driver = new ChromeDriver(options);
+                    return new ChromeDriver(options);
             }
-            driver.manage().window().maximize();
-            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-            return driver;
         } catch (Exception e) {
             e.printStackTrace();
             return null;
@@ -77,7 +74,7 @@ public class BaseTest {
         return driver;
     }
 
-    public static void setupDriver(BrowserType browserName) {
-        getBrowser(browserName);
+    public static BrowserType getBrowserType() {
+        return browserType;
     }
 }

@@ -15,8 +15,8 @@ public class PagesWindows {
 	private String textoCapturado;
 	
 	public PagesWindows(WebDriver driver, String URL) {
-		driver.navigate().to(URL);
 		this.driver = driver;
+        driver.get(URL);
 		BottonClickHere = By.xpath("/html/body/div[2]/div/div/a");
 	}
 	

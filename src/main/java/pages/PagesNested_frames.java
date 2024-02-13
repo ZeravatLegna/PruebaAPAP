@@ -4,7 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import helpers.BaseTest;
 import helpers.Helpers;
+
 public class PagesNested_frames {
 	// Controlador 
 	private WebDriver driver;
@@ -16,11 +18,11 @@ public class PagesNested_frames {
 	private String FrameBotton = "frame-bottom";
 
 	
-	public PagesNested_frames(WebDriver driver, String URL) {
-		driver.navigate().to(URL);
-		this.driver = driver;
-	
-	}
+	public PagesNested_frames(String URL) {
+        this.driver = BaseTest.getDriver();
+        this.helper = new Helpers();
+        driver.get(URL);
+    }
 		
 		
 	public String testapap2() {
