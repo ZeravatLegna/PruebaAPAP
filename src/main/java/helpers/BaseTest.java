@@ -1,5 +1,6 @@
 package helpers;
 
+import helpers.BrowserType;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 import java.util.concurrent.TimeUnit;

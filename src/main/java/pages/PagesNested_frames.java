@@ -17,10 +17,9 @@ public class PagesNested_frames {
 	private String FrameRight = "frame-right";
 	private String FrameBotton = "frame-bottom";
 
-	
-	public PagesNested_frames(String URL) {
+    public PagesNested_frames(WebDriver webDriver, String URL) {
         this.driver = BaseTest.getDriver();
-        this.helper = new Helpers();
+        new Helpers();
         driver.get(URL);
     }
 		
